@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/search-show/search-show"
+  ],
+  "window": {
+    "defaultTitle": "Show Iko?",
+    "titleBarColor": "#323239"
+  }
+}

@@ -1,0 +1,16 @@
+<view class="page-home">
+  <text class="header">Show Iko Wapi?</text>
+  <text class="desc">
+    Get Streaming details of Movie and TV Shows from 150+ Streaming platforms
+  </text>
+
+  <view class="container">
+    <form class="search-form">
+      <input type="text" class="search-input" placeholder="Enter Show/Movie Title" />
+      <button class="search-button" type="submit">
+        search
+      </button>
+    </form>
+  </view>
+
+</view>

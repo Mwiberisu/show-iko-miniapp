@@ -1,0 +1,45 @@
+.page-home {
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  font-size: x-large;
+  font-weight: bolder;
+  color: blueviolet;
+
+}
+
+.desc {
+  color: black;
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form {
+
+  margin: 10px;
+}
+
+.search-input {
+  flex: 1;
+  margin: 10px;
+  border: solid;
+  border-radius: 10px;
+  border-color: crimson;
+
+}
+
+.search-button {
+  flex: 1;
+  background: tomato;
+  padding: 10ox 50px;
+  color: white;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
