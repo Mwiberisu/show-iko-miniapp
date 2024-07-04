@@ -1,6 +1,9 @@
 .page-home {
-  padding: 20px 20px;
-  box-sizing: border-box;
+  padding: 20px;
+  box-sizing: content-box;
+  align-items: center;
+  justify-content: center;
+  display: list-item;
 }
 
 .header {
@@ -15,31 +18,27 @@
 
 }
 
-.container {
-  display: flex;
+.search-form {
+  background: #fff;
   align-items: center;
   justify-content: center;
-}
+  margin: 1em auto;
+  display: flex;
 
-.search-form {
-
-  margin: 10px;
 }
 
 .search-input {
   flex: 1;
-  margin: 10px;
-  border: solid;
-  border-radius: 10px;
-  border-color: crimson;
-
+  outline: none;
+  border: none;
 }
 
 .search-button {
-  flex: 1;
   background: tomato;
-  padding: 10ox 50px;
+  padding: 0 17px;
   color: white;
   letter-spacing: 1px;
   cursor: pointer;
+  outline: none;
+  border: none;
 }
