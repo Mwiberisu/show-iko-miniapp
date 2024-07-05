@@ -1,7 +1,6 @@
 {
   "pages": [
-    "pages/home/home",
-    "pages/search-show/search-show"
+    "pages/home/home"
   ],
   "window": {
     "defaultTitle": "Show Iko?",

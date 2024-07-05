@@ -20,8 +20,6 @@
 
 .search-form {
   background: #fff;
-  align-items: center;
-  justify-content: center;
   margin: 1em auto;
   display: flex;
 
@@ -41,4 +39,39 @@
   cursor: pointer;
   outline: none;
   border: none;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: blueviolet;
+  color: white;
+  text-align: center;
+}
+
+.show-item {
+  border: 1px;
+  border-radius: 25px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.show-list {
+  display: flex;
+  background-color: #F0FFFF;
+  gap: 20px;
+  justify-content: center;
+  text-align: justify;
+}
+
+.show-image {
+  background-color: aliceblue;
+
+}
+
+.title {
+  font-weight: bold;
+  color: darkorchid;
 }
