@@ -2176,4 +2176,14 @@ Page({
 
 
   },
+  getShow(e) {
+    let url = e.target.dataset.value.link;
+    my.alert({
+      title: 'Success',
+      content: url,
+      buttonText: 'Ok',
+
+    });
+
+  }
 });
