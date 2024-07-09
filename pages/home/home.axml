@@ -1,16 +1,80 @@
 <view class="page-home">
-  <text class="header">Show Iko Wapi?</text>
-  <text class="desc">
+  <view class="header">Show Iko?</view>
+  <view class="desc">
     Get Streaming details of Movie and TV Shows from 150+ Streaming platforms
-  </text>
+  </view>
 
-  <view class="container">
+  <view>
+    <view class="notice">
+      Select your country below. NB: By default United States will be used
+    </view>
     <form class="search-form">
-      <input type="text" class="search-input" placeholder="Enter Show/Movie Title" />
-      <button class="search-button" type="submit">
+
+
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Enter Show/Movie Title"
+        onBlur="onBlur"
+      />
+      <button class="search-button" onTap="searchShow">
         search
       </button>
     </form>
   </view>
+  <view>
 
+
+  </view>
+  <view a:for="{{shows}}" class="show-list">
+    <block a:if="{{ item.streamingOptions.ca !== undefined}}">
+      <view class="show-item">
+        <view>
+          <text class="header">{{item.originalTitle}}</text>
+        </view>
+        <image class="show-image" mode="aspectFit" src="{{item.imageSet.verticalPoster.w360}}" />
+
+        <view>
+          <text class="title">Type:</text>
+          <text>{{item.showType}}</text>
+        </view>
+        <view>
+          <text class="title">Genre:</text>
+
+          <label a:for="{{ item.genres }}">
+            <text> {{item.name}}|</text>
+          </label>
+        </view>
+        <view>
+          <text class="title">Rating:</text>
+          <text>{{item.rating}}</text>
+        </view>
+        <view>
+          <text class="title">Available On:</text>
+
+          <label a:for="{{ item.streamingOptions.ca }}">
+
+            <view onTap="getShow" data-value={{item}}>
+              <ant-button size="small">
+                {{item.service.name}}
+              </ant-button>
+
+            </view>
+
+          </label>
+        </view>
+        <view>
+          <text class="title">Overview:</text>
+          <text>{{item.overview}}</text>
+        </view>
+      </view>
+
+
+    </block>
+
+
+  </view>
+  <view class="footer">
+    <text>MwiberiInc @ 2024</text>
+  </view>
 </view>
